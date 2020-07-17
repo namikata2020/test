@@ -31,6 +31,7 @@ $ make
 ```
 $ ./thermalview
 ```
+![スクリーンショット](https://github.com/namikata2020/test/blob/master/scrimg.png)
 
 ## 参考
 [PureThermal UVC Capture Examples](https://github.com/groupgets/purethermal1-uvc-capture)
