@@ -16,6 +16,8 @@
 シリアルポートを利用して標準入出力(stdio.h,printf(),scanf())関数が動作します。設定は"FreeRTOS/FreeRTOSConfig.h"ファイルを書き換えて行います。
 
 ```
+FreeRTOSConfig.h抜粋
+
 /* Board specifics. */
 /* use serial console */
 #define		USE_SERIAL_CONSOLE
@@ -31,3 +33,10 @@
 
 #endif /* USE_SERIAL_CONSOLE */
 ```
+
+`#define		USE_SERIAL_CONSOLE` をコメントアウトすると標準入出力の機能が使えなくなる。(使用できるROM領域が増える)
+
+`#define		USE_SCI_PORT	0` でSCI0(RS232C)を使うのかSCI1(USB)を使うのか設定する。
+
+`#define		SERIAL_BAUD_RATE	38400` で通信速度を設定します。
+
