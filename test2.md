@@ -11,7 +11,17 @@
 　IDE　　　　[e2-studio](https://www.renesas.com/jp/ja/products/software-tools/tools/ide/e2studio.html)　Version: 2020-07 (20.7.0)
  
 　Compiler　 Renesas [CC-RX](https://www.renesas.com/jp/ja/products/software-tools/tools/compiler-assembler/compiler-package-for-rx-family.html) V2.08.01
- 
+
+### IDE設定
+
+
+ライブラリはリエントラントに作成する必要があります。
+
+標準ライブラリ構築ツールで-reent オプションを指定して作成したライブラリは、rand、srand 関数およびEC++ ライブラリを除いてすべてリエントラントに実行できます。
+
+-reent オプションを指定した場合は、コンパイル時に_REENTRANTを定義しておく必要があります。`#define _REENTRANT` コンパイル時の -D_REENTRANT オプション
+
+
 ## 追加機能
 シリアルポートを利用して標準入出力(stdio.h,printf(),scanf())関数が動作します。設定は"FreeRTOS/FreeRTOSConfig.h"ファイルを書き換えて行います。
 
