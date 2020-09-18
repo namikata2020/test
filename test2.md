@@ -1,4 +1,4 @@
-# FreeRTOS version 10.4.1 for Renesas RX210 MPU
+# FreeRTOS for Renesas RX210 MPU
 
 ルネサスエレクトロニクス製MPU RX210用のFreeRTOSの実装です。
 
