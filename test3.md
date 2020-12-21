@@ -1,3 +1,6 @@
-Audio amplifier using a Nutube 6P1
+eggx
+====
 
-kicadで作成した回路図データです。
+EGGX X11 Graphics Library
+
+see https://www.ir.isas.jaxa.jp/~cyamauch/eggx_procall/
